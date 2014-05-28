@@ -1,0 +1,265 @@
+/* animation keyframe sets */
+@keyframes TitleAnimation{
+	from{
+		left: 800px;
+	}
+	to{
+		left: 0;
+	}
+	from{
+		transform: rotate(360deg);
+	}
+	to{
+		transform: rotate(0deg);
+	}
+}
+@-webkit-keyframes TitleAnimation{
+	from{
+		left: 800px;
+		-webkit-transform: rotate(360deg);
+	}
+	to{
+		left: 0;
+		-webkit-transform: rotate(0deg);
+	}
+}
+#Title{
+	display: inline-block;
+	position: relative;
+}
+
+/* Reset CSS */
+body, h1, h2, h3, p, ul, li, ol{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-color: black;
+}
+
+p{
+	margin: 0 20px;
+}
+
+h1{
+	font-size: 60px;
+}
+h2{
+	color: green;
+	position: relative;
+}
+img{
+	width: 100%;
+}
+
+.redText{
+	color: red;
+}
+#Container{
+	margin: 0 auto;
+	background-color: gray;
+	width: 1000px;
+	position:relative;
+	z-index: 0;
+}
+#Top{
+	width: 100%;
+	background-color: blue;
+	color: white;
+	position: relative;
+	z-index: 1;
+}
+#MainContent{
+	width: 70%;
+	background-color: orange;
+	float: left;
+	position: :relative;
+	z-index: 0;
+}
+#SideBar{
+	background-color: purple;
+	width: 30%;
+	min-height: 300px;
+	float: left;
+}
+#Bottom{
+	background-color: red;
+	color: white;
+	min-height: 150px;
+	width: 100%; 
+	clear:	both;
+}
+
+.clear{
+	clear: both;
+}
+
+/* Top Level Nav */
+
+#Top ul{
+}
+#Top ul li{
+	list-style: none;
+	float: left;
+	position: relative;
+}
+#Top ul li a{
+	padding: 20px 30px;
+	background-color: black;
+	color: white;
+	display: inline-block;
+	text-decoration: none;
+	font-size: 32px;
+	text-transform: uppercase;
+	border-left: 2px solid white;
+}
+#Top ul li:first-child a{
+	border-left: none;
+}
+#Top ul li a:hover{
+	background-color: white;
+	color: black;
+}
+
+/* Sub Level Nav */
+#Top ul li ul{
+	position: absolute;
+	top: 78px;
+	left: -9999px;
+}
+#Top ul li:hover ul{
+	left: 0;
+}
+#Top ul li ul li{
+	float: none;
+}
+#Top ul li ul li a{
+	border: none;
+	width: 130px;
+	font-size: 18px;
+}
+
+/* Logo Style */
+
+h1 a{
+	background: url("../images/logo.jpg") no-repeat;
+	display: inline-block;
+	width: 300px;
+	height: 225px;
+	text-indent: -9999px;
+	background-size: 100%;
+}
+
+.cycle-slideshow img{
+	width: 100px;
+}
+
+/* Social Links */
+#SocialLinks{
+
+}
+#SocialLinks li{
+	list-style: none;
+	float: left;
+}
+#SocialLinks li a{
+	background: url("../images/icons.png");
+	display: inline-block;
+	height: 60px;
+	width: 55px;
+	text-indent: -9999px;
+}
+/* facebook link style*/
+#SocialLinks li:first-child a:hover{
+	background-position: 0 -55px;
+}
+/* twitter link styles */
+#SocialLinks li:nth-child(2) a{
+	background-position: -55px 0;
+}
+#SocialLinks li:nth-child(2) a:hover{
+	background-position: -55px -55px;
+}
+/* linked in link styles */
+#SocialLinks li:nth-child(3) a{
+	width: 60px;
+	background-position: -110px 0;
+}
+#SocialLinks li:nth-child(3) a:hover{
+	background-position: -110px -55px;
+}
+
+/* Media Selectors, Respsonive stuff */
+
+@media screen and (max-width: 1000px){
+	#Container{
+		width: 100%;
+	}
+	#Top ul li:first-child{
+		position: relative;
+		z-index: 11;
+	}
+	#Top ul li:nth-child(2){
+		position: relative;
+		z-index: 10;
+	}
+}
+
+@media screen and (max-width: 600px){
+	#MainContent, #SideBar{
+		float: none;
+		width: 100%;
+	}
+	#Top ul li{
+		float: none;
+
+	}
+	#Top ul li a{
+		width: 100%;
+		text-align: center;
+		border-left: none;
+		border-bottom: 2px solid #ffffff;
+	}
+	#Top ul li ul{
+		position: absolute;
+	}
+	#Top ul li:hover ul{
+		position: relative;
+		top: 0;
+	}
+	#Top ul li ul li a{
+		width: 100%;
+		text-align: center;
+		background-color: #ffffff;
+		color: #000000;
+		border-top: 1px #000000 solid;
+	}
+	#Top ul li ul li a:hover{
+		background-color: #1f1f1f;
+		color: #ffffff;
+	}
+}
+
+#FancyImages img{
+	width:25% !important;
+}
+
+table{
+	border: 1px solid #ffffff;
+}
+td{
+	border-right: 1px solid #ffffff;
+	border-bottom: 1px solid #ffffff;
+}
+th{
+	border-right: 1px solid #ffffff;
+	border-bottom: 2px solid #ffffff;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About Stuff</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+	<div id="Container">
+		<h1>Yes, you made it to the about page</h1>
+		<p><a title="home" href="index.html">Go Back</a></p>
+		<table>
+			<thead>
+				<tr><th>ID</th><th>Name</th><th>Email</th></tr>
+			</thead>
+			<tbody>
+				<tr><td>1</td><td>Fin the Human</td><td>fth@gmail.com</td></tr>
+				<tr><td>2</td><td>Ian Malcolm</td><td>geof@gmail.com</td></tr>
+				<tr><td>3</td><td>Marty McFly</td><td>backintime@gmail.com</td></tr>
+			</tbody>
+		</table>
+		<form name="DummbyInformation" action="#" method="POST">
+			<label for="fName">First Name</label>
+			<input type="text" id="fName">
+			<label for="email">Email</label>
+			<input	type="email" id="email" required>
+			<label for="Random">Stuff</label>
+			<input type="color" id="Random">
+			<label for="Pwd">Password</label>
+			<input type="password" id="Pwd">
+			<p>Make some choices</p>
+			<input type="checkbox" name="choices" value="College">College<br />
+			<input type="checkbox" name="choices" value="Career">Career<br />
+			<input type="checkbox" name="choices" value="JobSatisfaction">Job Satisfaction<br />
+
+			<input type="checkbox" name="choices" value="WaterSlides">Really Cool Water Slides<br />
+			<br />
+			<p>Pick One</p>
+			<input type="radio" name="pickOne" value="Dog">Dog<br />
+			<input type="radio" name="pickOne" value="Cat">Cat<br />
+			<input type="radio" name="pickOne" value="Godzilla">Godzilla<br />
+			<select>
+				<option value="none">---</option>
+				<option value="small">Small</option>
+				<option value="med">Medium</option>
+				<option value="lrg" selected="selected">Large</option>
+			</select>
+			<input type="submit" value="Turn in you junk">
+			<button type="button">Submit</button>
+		</form>
+		<p><a title="talk to me" href="mailto:bionicmonkey007@juno.com?Subject=What%20Up">Click here</a> to email-me.</p>
+	</div>
+</body>
+</html>
